@@ -48,7 +48,6 @@ func main() {
 	}
 	fmt.Printf("Wrote %d bytes to stdout\n", s)
 
-	// Use built-in Copy function
 	if _, err := io.Copy(&writer, &reader); err != nil {
 		log.Fatalln("Unable to read/write data")
 	}
